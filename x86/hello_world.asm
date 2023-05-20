@@ -7,7 +7,7 @@ _main:
 
   push msg
   call _printf
-  add esp, 4
+  add esp, 4 ; we dont use "pop" in this household [|[___(..__]|]
   ret
 
 section .data
