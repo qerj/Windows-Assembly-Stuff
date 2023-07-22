@@ -7,7 +7,7 @@ _main:
 
   push msg
   call _printf
-  add esp, 4 ; we dont use "pop" in this household [|[___(..__]|]
+  add esp, 4 ; cdecl calling convention. We have to clear the stack inside in the caller rather than the callee like stdcall. I love stds.
   ret
 
 section .data
